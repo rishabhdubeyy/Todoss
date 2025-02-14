@@ -5,7 +5,7 @@ import supabase from "../backend/supabase";
 
 const AccountScreen = ({ navigation }: any) => {
   const backBtn = () => {
-    navigation.navigate("Home");
+    navigation.goBack();
   };
 
   const signOut = async () => {

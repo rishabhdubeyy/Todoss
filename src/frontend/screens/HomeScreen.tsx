@@ -29,21 +29,21 @@ interface Todo {
 
 const generateAsciiTodo = (tasks: Todo[]) => {
   const date = new Date().toLocaleString();
-  let ascii = `╔══════════════════════════════╗\n`;
-  ascii += `║          TODO LIST           ║\n`;
-  ascii += `╠══════════════════════════════╣\n`;
+  let ascii = `═══════════════════════\n`;
+  ascii += `          TODO LIST           \n`;
+  ascii += `═══════════════════════\n`;
 
   tasks.forEach((task, index) => {
     const status = task.done ? 'x' : 'o';
-    ascii += `║ ${status} ${task.text.slice(0, 25).padEnd(25)} ║\n`;
+    ascii += ` ${status} ${task.text.slice(0, 25).padEnd(25)} \n`;
     if (index !== tasks.length - 1) {
-      ascii += `╟──────────────────────────────╢\n`;
+      ascii += `───────────────────────\n`;
     }
   });
 
-  ascii += `╠══════════════════════════════╣\n`;
-  ascii += `║ Generated: ${date.padEnd(17)} ║\n`;
-  ascii += `╚══════════════════════════════╝`;
+  ascii += `═══════════════════════\n`;
+  ascii += ` Generated: ${date.padEnd(17)} \n`;
+  ascii += `═══════════════════════`;
   return ascii;
 };
 
@@ -316,6 +316,7 @@ const styles = StyleSheet.create({
   },
   taskText: {
     fontSize: 20,
+    paddingRight: 28,
   },
   taskView: {
     borderRadius: 8,
