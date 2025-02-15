@@ -65,7 +65,7 @@ import {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.goBackBtn}
-            onPress={() => navigation.navigate("auth")}
+            onPress={() => navigation.goBack()}
           >
             <Text style={styles.signUpBtnTxt}>Go back</Text>
           </TouchableOpacity>
@@ -101,8 +101,10 @@ import {
     textInput: {
       borderWidth: 2,
       borderRadius: 10,
-      width: "100%",
+      width: '100%',
       borderColor: "lightgreen",
+      height: 50,
+      padding: 10,
     },
   
     titleText: {
