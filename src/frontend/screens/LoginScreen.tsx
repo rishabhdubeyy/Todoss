@@ -59,7 +59,7 @@ const LoginScreen = ({ navigation }: any) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.goBackBtn}
-          onPress={() => navigation.navigate("auth")}
+          onPress={() => navigation.goBack()}
         >
           <Text style={styles.logInBtnTxt}>Go back</Text>
         </TouchableOpacity>
@@ -90,8 +90,10 @@ const styles = StyleSheet.create({
   textInput: {
     borderWidth: 2,
     borderRadius: 10,
-    width: "100%",
     borderColor: "lightgreen",
+    height: 50,
+    padding: 10,
+    width: '100%',
   },
   btContainer: {
     flex: 1,
