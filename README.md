@@ -11,9 +11,8 @@ This is a local first Todo app that can be used online as well as offline. it is
 
 
 ## Demo
+![2025-02-15 12-37-56](https://github.com/user-attachments/assets/d83c65a0-dd67-4957-9f78-d924043a26e6)
 
-![](https://ibb.co/jCg2r2n)
-https://imgur.com/a/TteWj8a
 
 ## 🚀 About Me
 Hi my name is rishabh dubey and i am a sofware developer from India. 
