@@ -12,7 +12,7 @@ This is a local first Todo app that can be used online as well as offline. it is
 
 ## Demo
 
-![gif](https://imgur.com/a/TteWj8a)
+![](https://ibb.co/jCg2r2n)
 https://imgur.com/a/TteWj8a
 
 ## 🚀 About Me
